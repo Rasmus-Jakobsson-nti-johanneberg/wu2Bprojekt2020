@@ -1,0 +1,82 @@
+/*--- MOBILE CSS ---*/
+@media screen and (max-width: 900px){
+    /*--- CSS FOR GLOBAL CLASSES ---*/
+        .global_nav{
+            grid-area:nav;
+            background: darkgreen
+        }
+
+        .global_header{
+        
+            grid-area:header;
+            background: darkgreen
+        }
+    
+    /*--- CSS FOR HOME/INDEX ---*/   
+        .home_body{
+            background: black;
+            display:flex;
+            justify-content: center;
+        }
+        
+        .home_container{
+            background: black;
+            display: grid;
+            align: center;
+            height: 100vh;
+            width: 100vw;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-areas:
+            "nav header"
+            "main main"
+            "footer footer"
+        }
+        
+        .home_main{
+            grid-area:main;
+            background: darkgreen;
+            display: grid;
+            gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 1.5em;
+            grid-template-areas:
+            "ar1 ar2"
+            "ar3 ar4"
+        }
+    
+        .home_footer{
+            grid-area:footer;
+            background: darkgreen
+        }
+    
+        .home_aside{
+            display: none;
+        }
+        .home_ar1{
+            grid-area: ar1;
+            background:gray
+        }
+        .home_ar2{
+            grid-area: ar2;
+            background:gray
+        }
+        .home_ar3{
+            grid-area: ar3;
+            background:gray
+        }
+        .home_ar4{
+            grid-area: ar4;
+            background:gray
+        }
+    /*--- CSS FOR NEWS ---*/
+        
+}
+
+/*--- DESKTOP CSS ---*/
+@media screen and (min-width: 900px){
+
+}
