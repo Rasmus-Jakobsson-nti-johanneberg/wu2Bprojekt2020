@@ -1,38 +1,49 @@
 /*--- MOBILE CSS ---*/
 @media screen and (max-width: 900px){
     /*--- CSS FOR GLOBAL CLASSES ---*/
-        .global_nav{
-            grid-area:nav;
-            background: darkgreen
-        }
-
-        .global_header{
-        
-            grid-area:header;
-            background: darkgreen
-        }
-    
-    /*--- CSS FOR HOME/INDEX ---*/   
-        .home_body{
+        .global_body{
             background: black;
             display:flex;
             justify-content: center;
         }
-        
+
+        .global_nav{
+            grid-area:nav;
+            background: darkgreen;
+            position: absolute;
+            top: 35%;
+            left: 25px;    
+        }
+
+        .global_header{
+            grid-area:header;
+            background: darkgreen;
+            position: absolute;
+            top: 35%;
+            right: 25px;
+        }
+        .global_top{
+            background: darkgreen;
+            position: fixed;
+            height: 10%;
+            width: 100%;
+            right: 0px;
+            top: 0px
+        }
+    
+    /*--- CSS FOR HOME/INDEX ---*/   
         .home_container{
             background: black;
             display: grid;
-            align: center;
             height: 100vh;
             width: 100vw;
             gap: 10px;
             padding: 10px;
-            grid-template-columns: 1fr 4fr;
-            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-rows: 0.6fr 6fr 1fr;
             grid-template-areas:
-            "nav header"
-            "main main"
-            "footer footer"
+            "top"
+            "main"
+            "footer"
         }
         
         .home_main{
@@ -73,7 +84,123 @@
             background:gray
         }
     /*--- CSS FOR NEWS ---*/
-        
+        .news_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+        .news_main{
+            grid-area: main;
+            background: darkgreen;
+            display: grid;
+            padding: 1.5em;
+            gap: 2em;
+            grid-template-areas:
+            "ar1"
+            "ar2"
+            "ar3"
+            "ar4"
+        }
+
+        .news_ar1{
+            grid-area: ar1;
+            background: gray;
+        }
+        .news_ar2{
+            grid-area: ar2;
+            background: gray;
+        }
+        .news_ar3{
+            grid-area: ar3;
+            background: gray;
+        }
+        .news_ar4{
+            grid-area: ar4;
+            background: gray;
+        }
+        .news_ar5{
+            display: none;
+        }        
+        .news_ar6{
+            display: none;
+        }
+
+    /*--- CSS FOR TOPLIST ---*/
+        .toplist_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+        .toplist_main{
+            grid-area: main;
+            background: darkgreen;
+            display: grid;
+            padding: 1.5em;
+            gap: 2em;
+            grid-template-areas:
+            "ar1"
+            "ar2"
+            "ar3"
+            "ar4"
+        }
+
+        .toplist_ar1{
+            grid-area: ar1;
+            background: gray;
+        }
+        .toplist_ar2{
+            grid-area: ar2;
+            background: gray;
+        }
+        .toplist_ar3{
+            grid-area: ar3;
+            background: gray;
+        }
+        .toplist_ar4{
+            grid-area: ar4;
+            background: gray;
+        }
+        .toplist_ar5{
+            display: none;
+        }        
+        .toplist_ar6{
+            display: none;
+        }
+
+    /*--- CSS FOR TOPLIST ---*/
+        .contact_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+    .contact_main{
+        grid-area: main;
+        background: darkgreen;
+    }
+
+    /*--- CSS FOR REVIEW ---*/
+
 }
 
 /*--- DESKTOP CSS ---*/
