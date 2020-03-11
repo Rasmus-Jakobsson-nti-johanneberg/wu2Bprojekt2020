@@ -28,9 +28,17 @@
             height: 10%;
             width: 100%;
             right: 0px;
-            top: 0px
+            top: 0px;
+            grid-area: top;
         }
-    
+        
+        .global_nav_d{
+            display: none
+        }
+
+        .global_header_d{
+            display: none
+        }
     /*--- CSS FOR HOME/INDEX ---*/   
         .home_container{
             background: black;
@@ -194,16 +202,250 @@
             "main"
         }
 
-    .contact_main{
-        grid-area: main;
-        background: darkgreen;
-    }
+        .contact_main{
+            grid-area: main;
+            background: darkgreen;
+        }
 
     /*--- CSS FOR REVIEW ---*/
+        .review_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 2fr 4fr;
+            grid-template-areas:
+            "top"
+            "pic"
+            "sec"
+        }
+
+        .review_section{
+            grid-area: sec;
+            background: darkgreen;
+        }
+
+        .review_div{
+            grid-area: pic;
+            background: darkgreen;
+        }
 
 }
 
 /*--- DESKTOP CSS ---*/
 @media screen and (min-width: 900px){
+    /*--- CSS FOR GLOBAL CLASSES ---*/
+        .global_body{
+            background: black;
+        }
+
+        .global_nav_d{
+            grid-area:nav;
+            background: darkgreen;
+        }
+
+        .global_header_d{
+            grid-area:header;
+            background: darkgreen;
+        }
+
+        .global_top{
+            display:none
+        }
+
+
+    /*--- CSS FOR HOME/INDEX ---*/   
+        .home_container{
+            background: black;
+            display: grid;
+            height: 100vh;
+            width: 100vw;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 1fr 0.5fr 12fr;
+            grid-template-columns: 5fr 1fr;
+            grid-template-areas:
+            "header header"
+            "nav nav"
+            "main aside"
+        }
+
+        .home_main{
+            grid-area:main;
+            background: darkgreen;
+            display: grid;
+            gap: 2em;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 1.5em;
+            grid-template-areas:
+            "ar1 ar2"
+            "ar3 ar4"
+        }
+
+        .home_footer{
+            display: none;
+        }
+
+        .home_aside{
+            grid-area: aside;
+            background: darkgreen
+        }
+        .home_ar1{
+            grid-area: ar1;
+            background:gray
+        }
+        .home_ar2{
+            grid-area: ar2;
+            background:gray
+        }
+        .home_ar3{
+            grid-area: ar3;
+            background:gray
+        }
+        .home_ar4{
+            grid-area: ar4;
+            background:gray
+        }
+    /*--- CSS FOR NEWS ---*/
+        .news_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+        .news_main{
+            grid-area: main;
+            background: darkgreen;
+            display: grid;
+            padding: 1.5em;
+            gap: 2em;
+            grid-template-areas:
+            "ar1"
+            "ar2"
+            "ar3"
+            "ar4"
+        }
+
+        .news_ar1{
+            grid-area: ar1;
+            background: gray;
+        }
+        .news_ar2{
+            grid-area: ar2;
+            background: gray;
+        }
+        .news_ar3{
+            grid-area: ar3;
+            background: gray;
+        }
+        .news_ar4{
+            grid-area: ar4;
+            background: gray;
+        }
+        .news_ar5{
+            display: none;
+        }        
+        .news_ar6{
+            display: none;
+        }
+
+    /*--- CSS FOR TOPLIST ---*/
+        .toplist_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+        .toplist_main{
+            grid-area: main;
+            background: darkgreen;
+            display: grid;
+            padding: 1.5em;
+            gap: 2em;
+            grid-template-areas:
+            "ar1"
+            "ar2"
+            "ar3"
+            "ar4"
+        }
+
+        .toplist_ar1{
+            grid-area: ar1;
+            background: gray;
+        }
+        .toplist_ar2{
+            grid-area: ar2;
+            background: gray;
+        }
+        .toplist_ar3{
+            grid-area: ar3;
+            background: gray;
+        }
+        .toplist_ar4{
+            grid-area: ar4;
+            background: gray;
+        }
+        .toplist_ar5{
+            display: none;
+        }        
+        .toplist_ar6{
+            display: none;
+        }
+
+    /*--- CSS FOR TOPLIST ---*/
+        .contact_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 6fr;
+            grid-template-areas:
+            "top"
+            "main"
+        }
+
+        .contact_main{
+            grid-area: main;
+            background: darkgreen;
+        }
+
+    /*--- CSS FOR REVIEW ---*/
+        .review_container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            padding: 10px;
+            grid-template-rows: 0.5fr 2fr 4fr;
+            grid-template-areas:
+            "top"
+            "pic"
+            "sec"
+        }
+    
+        .review_section{
+            grid-area: sec;
+            background: darkgreen;
+        }
+    
+        .review_div{
+            grid-area: pic;
+            background: darkgreen;
+        }
 
 }
