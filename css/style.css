@@ -9,21 +9,27 @@
 
         .global_nav{
             grid-area:nav;
-            background: darkgreen;
             position: absolute;
-            top: 35%;
-            left: 25px;    
+            margin: 0;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: inline;    
+        }
+
+        .global_nav i.material-icons{
+            font-size: 3.5em;
         }
 
         .global_header{
             grid-area:header;
-            background: darkgreen;
             position: absolute;
             top: 35%;
             right: 25px;
         }
         .global_top{
-            background: darkgreen;
+            background: darkred;
             position: fixed;
             height: 10%;
             width: 100%;
@@ -39,6 +45,38 @@
         .global_header_d{
             display: none
         }
+
+        .hamburger_menu{
+            position: fixed;
+            height: 35vh;
+            width: 40vw;
+            top: 0;
+            left: -90vw;
+            background: gray;
+            transition: left 0.3s;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+            z-index: 10;
+        }
+
+        .fade_layer{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 5;
+        }
+
+        .fade_layer.visible{
+            display: block;
+        }
+
+        .show{
+            left: 0;
+        }
+        
     /*--- CSS FOR HOME/INDEX ---*/   
         .home_container{
             background: black;
@@ -47,7 +85,7 @@
             width: 100vw;
             gap: 10px;
             padding: 10px;
-            grid-template-rows: 0.6fr 6fr 1fr;
+            grid-template-rows: 0.6fr 6fr 0.5fr;
             grid-template-areas:
             "top"
             "main"
@@ -56,7 +94,7 @@
         
         .home_main{
             grid-area:main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             gap: 2em;
             grid-template-columns: 1fr 1fr;
@@ -68,28 +106,46 @@
         }
     
         .home_footer{
+            display: flex;
+            margin: auto;
             grid-area:footer;
-            background: darkgreen
+            color: red;
+            font-size: 20px;
+            text-shadow: 2px 2px 5px red;
         }
     
+        a:visited{
+            color:red;
+        }
+
+
+        a:hover{
+            text-decoration: none;
+        }
+
+
         .home_aside{
             display: none;
         }
         .home_ar1{
             grid-area: ar1;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar2{
             grid-area: ar2;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar3{
             grid-area: ar3;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar4{
             grid-area: ar4;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
     /*--- CSS FOR NEWS ---*/
         .news_container{
@@ -106,7 +162,7 @@
 
         .news_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             padding: 1.5em;
             gap: 2em;
@@ -120,18 +176,22 @@
         .news_ar1{
             grid-area: ar1;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar2{
             grid-area: ar2;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar3{
             grid-area: ar3;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar4{
             grid-area: ar4;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar5{
             display: none;
@@ -155,7 +215,7 @@
 
         .toplist_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             padding: 1.5em;
             gap: 2em;
@@ -169,18 +229,22 @@
         .toplist_ar1{
             grid-area: ar1;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar2{
             grid-area: ar2;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar3{
             grid-area: ar3;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar4{
             grid-area: ar4;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar5{
             display: none;
@@ -204,7 +268,7 @@
 
         .contact_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
         }
 
     /*--- CSS FOR REVIEW ---*/
@@ -223,12 +287,12 @@
 
         .review_section{
             grid-area: sec;
-            background: darkgreen;
+            background: darkred;
         }
 
         .review_div{
             grid-area: pic;
-            background: darkgreen;
+            background: darkred;
         }
 
         .review_aside{
@@ -246,12 +310,12 @@
 
         .global_nav_d{
             grid-area:nav;
-            background: darkgreen;
+            background: darkred;
         }
 
         .global_header_d{
             grid-area:header;
-            background: darkgreen;
+            background: darkred;
         }
 
         .global_top{
@@ -277,7 +341,7 @@
 
         .home_main{
             grid-area:main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             gap: 2em;
             grid-template-columns: 1fr 1fr;
@@ -294,23 +358,27 @@
 
         .home_aside{
             grid-area: aside;
-            background: darkgreen
+            background: darkred
         }
         .home_ar1{
             grid-area: ar1;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar2{
             grid-area: ar2;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar3{
             grid-area: ar3;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar4{
             grid-area: ar4;
-            background:gray
+            background:gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
     /*--- CSS FOR NEWS ---*/
         .news_container{
@@ -328,7 +396,7 @@
 
         .news_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             padding: 1.5em;
             gap: 2em;
@@ -340,26 +408,32 @@
         .news_ar1{
             grid-area: ar1;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar2{
             grid-area: ar2;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar3{
             grid-area: ar3;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar4{
             grid-area: ar4;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar5{
             grid-area: ar5;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }        
         .news_ar6{
             grid-area: ar6;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
 
     /*--- CSS FOR TOPLIST ---*/
@@ -378,7 +452,7 @@
 
         .toplist_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
             display: grid;
             padding: 1.5em;
             gap: 2em;
@@ -390,26 +464,32 @@
         .toplist_ar1{
             grid-area: ar1;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar2{
             grid-area: ar2;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar3{
             grid-area: ar3;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar4{
             grid-area: ar4;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar5{
             grid-area: ar5;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }        
         .toplist_ar6{
             grid-area: ar6;
             background: gray;
+            box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
 
     /*--- CSS FOR TOPLIST ---*/
@@ -428,7 +508,7 @@
 
         .contact_main{
             grid-area: main;
-            background: darkgreen;
+            background: darkred;
         }
 
     /*--- CSS FOR REVIEW ---*/
@@ -449,17 +529,17 @@
     
         .review_section{
             grid-area: sec;
-            background: darkgreen;
+            background: darkred;
         }
     
         .review_div{
             grid-area: pic;
-            background: darkgreen;
+            background: darkred;
         }
 
         .review_aside{
             grid-area: aside;
-            background: darkgreen
+            background: darkred
         }
 
 }
