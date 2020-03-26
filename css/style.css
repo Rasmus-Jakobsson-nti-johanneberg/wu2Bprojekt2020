@@ -56,6 +56,9 @@
             transition: left 0.3s;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
             z-index: 10;
+            text-shadow: 1px 1px black;
+            line-height: 2;
+            font-size: 1.5em;
         }
 
         .fade_layer{
@@ -91,7 +94,8 @@
             "main"
             "footer"
         }
-        
+
+
         .home_main{
             grid-area:main;
             background: darkred;
@@ -129,22 +133,34 @@
         }
         .home_ar1{
             grid-area: ar1;
-            background:gray;
+            background-image:url(/img/news_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar2{
             grid-area: ar2;
-            background:gray;
+            background-image:url(/img/toplist_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar3{
             grid-area: ar3;
-            background:gray;
+            background-image:url(/img/random_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar4{
             grid-area: ar4;
-            background:gray;
+            background-image:url(/img/contact_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
     /*--- CSS FOR NEWS ---*/
