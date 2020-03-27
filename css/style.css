@@ -59,6 +59,7 @@
             text-shadow: 1px 1px black;
             line-height: 2;
             font-size: 1.5em;
+            color: red;
         }
 
         .fade_layer{
@@ -78,6 +79,14 @@
 
         .show{
             left: 0;
+        }
+
+        .hamburger_menu_links:visited{
+            color:red;
+        }
+
+        a:hover{
+            text-decoration: none;
         }
         
     /*--- CSS FOR HOME/INDEX ---*/   
@@ -117,20 +126,23 @@
             font-size: 20px;
             text-shadow: 2px 2px 5px red;
         }
-    
-        a:visited{
-            color:red;
+
+        .home_footer_link:visited{
+            color: red
         }
-
-
-        a:hover{
-            text-decoration: none;
-        }
-
 
         .home_aside{
             display: none;
         }
+
+        .articles{
+            display: block;
+            background: lightgray;
+            height: 20%;
+            color: black;
+            font-size: 1.5em;
+        }
+
         .home_ar1{
             grid-area: ar1;
             background-image:url(/img/news_Cover.jpg);
@@ -163,6 +175,7 @@
             filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
+
     /*--- CSS FOR NEWS ---*/
         .news_container{
             display: grid;
@@ -191,22 +204,26 @@
 
         .news_ar1{
             grid-area: ar1;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar2{
             grid-area: ar2;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar3{
             grid-area: ar3;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar4{
             grid-area: ar4;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar5{
@@ -244,22 +261,26 @@
 
         .toplist_ar1{
             grid-area: ar1;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar2{
             grid-area: ar2;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar3{
             grid-area: ar3;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar4{
             grid-area: ar4;
-            background: gray;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar5{
@@ -303,12 +324,24 @@
 
         .review_section{
             grid-area: sec;
-            background: darkred;
+            background: lightgray;
+            border-style: solid;
+            border-width: 10px;
+            border-color: darkred;
+            padding:20px;
+        }
+
+        .review_header{
+            font-size: 2em;
         }
 
         .review_div{
             grid-area: pic;
-            background: darkred;
+            background-image:url(/img/random_Game.png);
+            background-size: cover;
+            border-style: solid;
+            border-width: 10px;
+            border-color: darkred;
         }
 
         .review_aside{
