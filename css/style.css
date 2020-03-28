@@ -371,7 +371,76 @@
 
         .global_nav_d{
             grid-area:nav;
-            background: darkred;
+            background: lightgray;
+            border-style: solid;
+            border-width: 3px;
+            border-color: darkred;
+            display: grid;
+            grid-template-areas:
+            "home news toplist contact"
+        }
+
+        .global_nav_d_home{
+            grid-area:home;
+            border-style:solid;
+            border-width: 1px;
+            border-color: darkred;
+            color: darkred;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+
+        .global_nav_d_news{
+            grid-area:news;
+            border-style:solid;
+            border-width: 1px;
+            border-color: darkred;
+            color: darkred;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+
+        .global_nav_d_toplist{
+            grid-area:toplist;
+            border-style:solid;
+            border-width: 1px;
+            border-color: darkred;
+            color: darkred;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+
+        .global_nav_d_contact{
+            grid-area:contact;
+            border-style:solid;
+            border-width: 1px;
+            border-color: darkred;
+            color: darkred;
+            text-align: center;
+            font-size: 1.3em;
+        }
+
+        .global_nav_d_home:hover{
+            background: rgb(110, 0, 0);
+            color: lightgray;
+        }
+
+        .global_nav_d_news:hover{
+            background: rgb(110, 0, 0);
+            color: lightgray;
+        }
+
+        .global_nav_d_toplist:hover{
+            background: rgb(110, 0, 0);
+            color: lightgray;
+        }
+
+        .global_nav_d_contact:hover{
+            background: rgb(110, 0, 0);
+            color: lightgray;
         }
 
         .global_header_d{
@@ -637,7 +706,10 @@
 
         .contact_main{
             grid-area: main;
-            background: darkred;
+            background: lightgray;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkred;
         }
 
     /*--- CSS FOR REVIEW ---*/
@@ -648,7 +720,7 @@
             gap: 10px;
             padding: 10px;
             grid-template-columns: 1fr 3fr;
-            grid-template-rows: 1fr 0.5fr 3fr 6fr;
+            grid-template-rows: 1fr 0.5fr 4fr 8fr;
             grid-template-areas:
             "header header"
             "nav nav"
@@ -658,17 +730,28 @@
     
         .review_section{
             grid-area: sec;
-            background: darkred;
+            background: lightgray;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkred;
         }
     
         .review_div{
             grid-area: pic;
-            background: darkred;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkred;
         }
 
         .review_aside{
             grid-area: aside;
-            background: darkred
+            background: lightgray;
+            border-style: solid;
+            border-width: 5px;
+            border-color: darkred;
         }
 
 }
