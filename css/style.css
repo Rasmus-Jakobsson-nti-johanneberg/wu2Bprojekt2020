@@ -206,24 +206,28 @@
             grid-area: ar1;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar2{
             grid-area: ar2;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar3{
             grid-area: ar3;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar4{
             grid-area: ar4;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar5{
@@ -263,24 +267,28 @@
             grid-area: ar1;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar2{
             grid-area: ar2;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar3{
             grid-area: ar3;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar4{
             grid-area: ar4;
             background-image:url(/img/random_Game.png);
             background-size: cover;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar5{
@@ -305,7 +313,11 @@
 
         .contact_main{
             grid-area: main;
-            background: darkred;
+            background: lightgray;
+            border-style: solid;
+            border-width: 10px;
+            border-color: darkred;
+            padding:20px;
         }
 
     /*--- CSS FOR REVIEW ---*/
@@ -371,6 +383,13 @@
             display:none
         }
 
+        .hamburger_menu{
+            display:none;
+        }
+
+        a:hover{
+            text-decoration: none;
+        }
 
     /*--- CSS FOR HOME/INDEX ---*/   
         .home_container{
@@ -407,26 +426,51 @@
 
         .home_aside{
             grid-area: aside;
-            background: darkred
+            background: lightgray;
+            border-style: solid;
+            border-width: 10px;
+            border-color: darkred;
+            padding:20px;
         }
+
+        .articles{
+            display: block;
+            background: lightgray;
+            height: 20%;
+            color: black;
+            font-size: 2em;
+        }
+
         .home_ar1{
             grid-area: ar1;
-            background:gray;
+            background-image:url(/img/news_Cover_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar2{
             grid-area: ar2;
-            background:gray;
+            background-image:url(/img/toplist_Cover_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar3{
             grid-area: ar3;
-            background:gray;
+            background-image:url(/img/random_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .home_ar4{
             grid-area: ar4;
-            background:gray;
+            background-image:url(/img/contact_Cover.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            filter: grayscale(100%);
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
     /*--- CSS FOR NEWS ---*/
@@ -456,32 +500,50 @@
 
         .news_ar1{
             grid-area: ar1;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar2{
             grid-area: ar2;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar3{
             grid-area: ar3;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar4{
             grid-area: ar4;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .news_ar5{
             grid-area: ar5;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }        
         .news_ar6{
             grid-area: ar6;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
 
@@ -512,32 +574,50 @@
 
         .toplist_ar1{
             grid-area: ar1;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar2{
             grid-area: ar2;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar3{
             grid-area: ar3;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar4{
             grid-area: ar4;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
         .toplist_ar5{
             grid-area: ar5;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }        
         .toplist_ar6{
             grid-area: ar6;
-            background: gray;
+            background-image:url(/img/random_Game_D.jpg);
+            background-size: cover;
+            background-position: 50% 50%;
+            text-decoration-color: black;
             box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         }
 
