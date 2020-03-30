@@ -20,13 +20,16 @@
 
         .global_nav i.material-icons{
             font-size: 3.5em;
+            color: lightgray;
         }
 
         .global_header{
             grid-area:header;
             position: absolute;
-            top: 35%;
+            top: 25%;
             right: 25px;
+            font-size: 2.3em;
+            color: lightgray;
         }
         .global_top{
             background: darkred;
@@ -81,6 +84,10 @@
             left: 0;
         }
 
+        .hamburger_menu_links:link{
+            color:red;
+        }
+
         .hamburger_menu_links:visited{
             color:red;
         }
@@ -125,6 +132,10 @@
             color: red;
             font-size: 20px;
             text-shadow: 2px 2px 5px red;
+        }
+
+        .home_footer_link:link{
+            color: red
         }
 
         .home_footer_link:visited{
@@ -446,6 +457,9 @@
         .global_header_d{
             grid-area:header;
             background: darkred;
+            font-size: 4em;
+            color: lightgray;
+            text-align: center;
         }
 
         .global_top{

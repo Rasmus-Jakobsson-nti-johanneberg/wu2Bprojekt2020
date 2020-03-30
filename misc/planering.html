@@ -204,12 +204,63 @@
     
     
     <h2>4. Testning</h2>
-    <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? 
+        Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? 
+        Vad säger contrastchecker.com om text/bakgrundsfärg? 
+        Hur ser resultatet ut på en riktig telefon? -->
+        Webbläsar på mobil+desktop:
+    </br>
+        Jag testade min hemsida på datorn i de webbläsarna jag hade installerat. I Chrome och Microsoft Edge så var det inga problem. De såg likadan ut förrutom att jag upptäckte ett
+        kodningsfel av mig själv som jag korrigerade gällande links decoration. När jag kollade på mobilen upptäckte jag att knapparna och texten var ganska stort. Det hade jag räknat med
+        och tyckte själv att det inte var för stort utan ok att lämna oförändrad.
+    </br></br>
+        Validering av kod:
+    </br>
+        Min index.html hade flest "problem". Jag fick meddelanden om "Malformed byte sequence" men kunde inte hitta vad det indikerade när jag googlade och kontrollerade raderna.
+        Bortsett från det fick jag meddelanden om ett par glömda mellanslag och hur jag använde articles. Jag använder den som en link till en sida där man kan läsa om artikeln medans
+        valideringen ser det som en text vilket jag använder section till. Till sist så indikerade valideringen att min användning av radbrytning var felaktig. Jag vet inte exakt varför
+        då jag inte minns om vi har gått igenom radbrytning så jag använde mig endast av google och märkte att det jag hittade fungerade på så sätt som jag velat. Mina andra sidor
+        klagade också på spacing, article användning och radbrytning. Korrigerade de jag visste problemet på.
+    </br></br>
+        Contrast checker:
+    </br>
+        Min text/bakgrund kombination har jag 5 varianter på som jag använder.</br>
+        Svart på vit:</br>
+        <img src="contrast_checker_svart_vit.png" alt="black on white contrast check"></br>
+        Svart på röd:</br>
+        <img src="contrast_checker_svart_röd.png" alt="black on red contrast check"></br>
+        Röd på vit</br>
+        <img src="contrast_checker_röd_vit.png" alt="red on white contrast check"></br>
+        Röd på svart</br>
+        <img src="contrast_checker_röd_svart.png" alt="red on black contrast check"></br>
+        Vit på röd</br>
+        <img src="contrast_checker_vit_röd.png" alt="white on red contrast check"></br></br>
+        Sammanfattning:</br>
+        Svart på vitt och vitt på rött var felfria och därför lämnar jag dem. Rött på vitt hade några problem men används endast på 1 ställe som vid hover byts till vitt på rött vilket
+        som sagt är felfritt. Rött på svart hade lite problem så jag blev osäker hur jag velat göra. Jag hade använt en viss skuggning i samma färg som fick den att lysa upp lite vilket
+        jag hoppades skulle duga för att bli mer läsbart. Tillslut kontaktade jag en kompis som jag vet har problem med synen gällande röda färger och han påstod att han kunde läsa det
+        felfritt och därför valde jag att ha kvar den. Till sist svart på rött är en hemsk kombination som jag också trodde att de skulle vara. Bytte till vitt på rött som är felfritt.
+
+
+
+
 
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
-
+    projekt var väldigt svårt men givande. I jämförelse med förra projektet har jag jobbat bra med det jag velat förbättra mig på. Hur jag namngav klasser, bilder och liknande
+    gjorde att detta projektet blev mycket bättre strukturerat vilket sparade mig massa tid. Arbetsprocessen blev däremot enklare med tiden, i början var det svårt att komma ihåg hur
+    man använde vissa taggar elr liknande men efter ett tag märkte jag att jag inte fastnade lika ofta utan kunde arbete effektivare. Min layout är ok men jag hade önskat att jag kunde
+    styla lite mer. Tillexempel att ändra hur mina bilder i form av länkar reagerar vid hovering. Ett block skulle kunna glida in från sidan med en text där det står vart man tar vägen.
+    Jag hade också velat göra så att min nav bar indikerade vart man befann sig. Det finns många saker jag skulle velat göra om jag hade mer tid och motivation. I helhet tycker jag
+    att jag borde jobba med mitt färgval då mina sidor har väldigt starka färger och inte direkt stilrena, blekare färger skulle göra det bättre. Mina layouts/grids är ok men lite
+    "tråkiga" och skulle definitivt kunna varieras lite mer. I skisserna skulle jag kunnat definitivt blivit lite galnare och mindre eftertänksam. Det hade kunnat leda till bättre
+    variaton samt mindre enformiga och fyrkantiga sidor. Storleken på allt var också ett problem. Hade jag istället kontrollerat oftare med telefon och desktop i fullskärm hade det
+    märkts tidigare och hade kunnat korrigeras.
+    </br></br>
+    Tills nästa projekt ska jag försöka advancera responsiviteten med tillexempel storleken på texten och layouten. Jag ska fortsätta med min arbetsprocess med hur jag först gör grunden
+    till alla sidor och sedan stylar samt min struktur med klasser och css. Färgvalen jag gör ska bli smartare då jag ska använda lite mer neutrala färger och min layout ska bli
+    mer varierad. Min effektivitet på lektionerna måste också bli bättre då det är ett vanligt problem för mig och många andra.
 </body>
 </html>
